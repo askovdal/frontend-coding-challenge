@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background: #e7e7e7;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 50px 20px;
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+
+.title {
+    margin: 0 auto;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 18px; 
+}
+
+.form-input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    padding: 10px 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+/* This makes the first selector option grey to act like a placeholder,
+   and all the other options black */
+select:required:invalid {
+    color: grey;
+  }
+  option {
+    color: black;
+}
+
+.brands-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -25px auto 25px;
+    width: 70%;
+    /* background: grey; */
+}
+
+.brand {
+    font-size: 17px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #c0c0c0;
+    cursor: pointer;
+}
+
+.brand:hover {
+    background: #ccc;
+}
+
+.help-msg {
+    display: inline-block;
+    color: grey;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-msg {
+    color: #f51414;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-button {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.submit-button {
+    margin-bottom: 0;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    background: #ccc;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background: #c0c0c0;
+}
+
+.submit-button:active {
+    background: #adadad;
+}
+
+/* This makes is so that when the browser window is the same width
+   as the form or less, it still has a small margin on either side */
+@media only screen and (max-width: 520px){
+    .form {
+        margin: 0 10px;
+    }
+}

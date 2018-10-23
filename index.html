@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form">
+            <div class="title">Keep in touch!</div>
+
+            <div class="form-group">
+                <label class="form-label" for="name-input">Full name</label>
+                <input type="text" id="name-input" class="form-input" name="name">
+                <p id="name-error" class="error-msg">&#8203;</p>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="email-input">Email adress</label>
+                <input type="text" id="email-input" class="form-input" name="email">
+                <p id="email-error" class="error-msg">&#8203;</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="birth-input">Date of birth</label>
+                <input type="text" id="birth-input" class="form-input" name="birth" placeholder="dd/mm/yyyy" maxlength="10">
+                <p id="birth-error" class="error-msg">&#8203;</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="brands-input">
+                    Favourite brands
+                    <span class="help-msg">(up to 5, seperate with comma)</span>
+                </label>
+                <input type="text" id="brands-input" class="form-input" name="brands" maxlength="20">
+                <p id="brands-error" class="error-msg">&#8203;</p>
+            </div>
+
+            <div id="brands-div" class="brands-div"></div>
+
+            <div class="form-group">
+                <label class="form-label" for="category-selector">Category</label>
+                <select id="category-selector" class="form-input" name="category" required>
+                    <option value="" disabled selected hidden>Select a category...</option>
+                    <option value="science">Science</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="politics">Politics</option>
+                    <option value="events">Events</option>
+                </select>
+                <p id="category-error" class="error-msg">&#8203;</p>
+            </div>
+
+            <div class="form-button">
+                <button class="submit-button" onclick="validateForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
